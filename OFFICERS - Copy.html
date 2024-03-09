@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contgent=""width=device=width, initial-scale="1.0">
+
+       <link rel="stylesheet" href="DIAQMOND.css">
+
+        <style>
+            /* *{
+         margin: 0;
+         padding: 0;
+     }*/
+     body{
+         overflow-x: hidden;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         min-height: 100vh;
+         margin: 0;
+         padding: 0;
+     }
+     html{
+         min-height: 100vh;
+     }
+     
+                backgroundThingFGJD {
+                    background-image: url('vector-abstract-light-blue-diamond-polygonal-background-illustration-triangle-geometric-gradient-148379288.webp');
+                    background-size: cover;
+                    height: 0;
+                    width: 100vw;
+                    z-index: -1;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    filter: saturate(500px);
+                }
+     li {
+         position: relative;
+         display: block;
+         transition: 0.5s;
+         cursor: pointer;
+     }
+     li::after {
+         position: absolute;
+         content: "";
+         width: 100%;
+         height: 3px;
+         left: 0;
+         transition: transform 0.5s;
+         transform: scaleX(0);
+         transform-origin: right;
+         background-color: blueviolet;
+     }
+     li:hover{
+         color: #ffffff
+     }
+     li:hover::after{
+         transform: scaleX(1);
+         transform-origin: left;
+     }
+     nav{
+         position:absolute;
+         font-size:20px;
+         width:100%;
+         height: 60px;
+         display: inline-block;
+         background-color: white;
+         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+         
+     }
+     nav ul{
+         width: 100%;
+         list-style-type: none;
+         text-decoration: none;
+     }
+     nav li{
+         height: 50px;
+         margin: 0;
+     }
+     nav a{
+         height: 100%;
+         padding: 0 30px;
+         text-decoration: none;
+         display: flex
+         align-items: center;
+         color: black;
+     }
+     
+     nav li:first-child{
+         margin-right: auto;
+     }
+     .sidebar{
+         position:absolute;
+         top: 0;
+         right: 0;
+         height: 100vh;
+         width: 250px;
+         z-index:;
+        background-color: white;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: flxe-start;
+        justify-content: flex-start;
+     }
+     .sidebar li{
+         width: 100%
+     }
+     .sidebar a{
+         width: 100%; 
+     }
+     .Diamonds
+     {
+     background-image: url("Abstract-Diamond-Wallpaper-Background.jpg");
+     background-size: cover;
+     text-align: center;
+     font-size:2em ;
+     filter: brightness(100%);
+     }
+     h2
+     {color: white;
+     }
+     
+     html {
+         scroll-behavior: smooth;
+     }
+     
+     ul li ul.dropdown {
+         display:none;
+     }
+     ul li ul.dropdown {
+         width: 100%;
+         background: rgb(164, 164, 217);
+         position:absolute ;
+         z-index: 999;
+         display:none ;
+     }
+     
+     ul li a.hover {
+         background: rgb(35, 35, 134);
+     }
+     
+     ul li:hover ul.dropdown {
+         display:block;
+     }
+     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+     
+     
+     
+     .footer {
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+       background: #3586ff;
+       min-height: 100px;
+       padding: 20px 50px;
+     
+     }
+     
+     .social-icon,
+     .menu {
+       position: absolute;
+       bottom: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 10px 0;
+       flex-wrap: wrap;
+     }
+     
+     .social-icon__item,
+     .menu__item {
+       list-style: none;
+     }
+     
+     .social-icon__link {
+       font-size: 2rem;
+       color: #fff;
+       margin: 0 10px;
+       display: inline-block;
+       transition: 0.5s;
+     }
+     .social-icon__link:hover {
+       transform: translateY(-10px);
+     }
+     .menu__link {
+       font-size: 1.2rem;
+       color: #fff;
+       margin: 0 10px;
+       display: inline-block;
+       transition: 0.5s;
+       text-decoration: none;
+       opacity: 0.75;
+       font-weight: 300;
+     }
+     .menu__link:hover {
+       opacity: 1;
+     }
+     .footer p {
+       color: #fff;
+       margin: 15px 0 10px 0;
+       font-size: 1rem;
+       font-weight: 300;
+     }
+     .wave {
+       position: absolute;
+       top: -100px;
+       left: 0;
+       width: 100%;
+       height: 100px;
+       background: url("https://i.ibb.co/wQZVxxk/wave.png");
+       background-size: 1000px 100px;
+     }
+     
+     .wave#wave1 {
+       z-index: 1000;
+       opacity: 1;
+       bottom: 0;
+       animation: animateWaves 4s linear infinite;
+     }
+     
+     .wave#wave2 {
+       z-index: 999;
+       opacity: 0.5;
+       bottom: 10px;
+       animation: animate 4s linear infinite !important;
+     }
+     
+     .wave#wave3 {
+       z-index: 1000;
+       opacity: 0.2;
+       bottom: 15px;
+       animation: animateWaves 3s linear infinite;
+     }
+     
+     .wave#wave4 {
+       z-index: 999;
+       opacity: 0.7;
+       bottom: 20px;
+       animation: animate 3s linear infinite;
+     }
+     
+     @keyframes animateWaves {
+       0% {
+         background-position-x: 1000px;
+       }
+       100% {
+         background-positon-x: 0px;
+       }
+       
+     }
+     
+     #wrapper {
+         display: block;
+         position: fixed;
+         text-align: center;
+         min-height: 100%;
+         width: 100%;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         }
+         
+         .logo{
+           position: absolute;
+           display: flex;
+           justify-content: center;
+           height:100%;
+           align-items: center;
+         }
+         
+         .logo a{
+         display: flex;
+           justify-content: center;
+           height:100%;
+           align-items: center;
+         
+         }
+         
+         .logo a img{
+         position: absolute;
+         width: 30px;
+         height:3s0px;
+         }
+     
+         </style>
+
+    </head>
+    <body>
+        <br>
+
+        <div class="Diamonds">
+            <br>
+            <h2>Diamond SY. 2023-2024</h2>
+            <br>
+        </div>
+        <backgroundThingFGJD>  </backgroundThingFGJD>
+        <nav>
+        <div class="logo">
+         <a href='#'><img src= "DIAS.jpg"/></a>
+         </div>
+    </div>
+            <ul>
+                <li ><a href="#">DIAMOND '23-'24 </a>
+
+                <li>
+                    <a href="teachers and students.html">Student and Teachers</a>
+                    <ul class="dropdown">
+                     
+                        <li><a href="OFFICERS.html">Officers</a></li>
+                        <li><a href="#">Student</a></li>
+                        <li><a href="teachers and students.html">Teachers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#">Honors</a>
+                    <ul class="dropdown">
+                        <li><a href="#">1st Quarter</a></li>
+                        <li><a href="#">2nd Quarter</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Events</a></li>
+
+        </nav>
+
+
+        <img src="teachers.jpg">
+    </body>
+</html>
